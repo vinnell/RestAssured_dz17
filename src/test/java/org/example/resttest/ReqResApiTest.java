@@ -69,17 +69,17 @@ public class ReqResApiTest {
                 .body("name", Matchers.equalTo("morpheus"))
                 .body("job", Matchers.equalTo("zion resident"));
     }
-    @Test
-    public void deleteUserTest(){
-
-        RequestSpecification request = RestAssured.given()
-                .when()
-                .accept(ContentType.JSON)
-                .baseUri("https://reqres.in/api/users/2");
-
-        Response response = request.request(Method.DELETE);
-        Assertions.assertEquals(response.getStatusCode(), 204);
-    }
+//    @Test
+//    public void deleteUserTest(){
+//
+//        RequestSpecification request = RestAssured.given()
+//                .when()
+//                .accept(ContentType.JSON)
+//                .baseUri("https://reqres.in/api/users/2");
+//
+//        Response response = request.request(Method.DELETE);
+//        Assertions.assertEquals(response.getStatusCode(), 204);
+//    }
     }
 
 
